@@ -54,11 +54,10 @@ LibraryManagementSystem/
 
 ### 1. Clone the Repository
 
-```bash
 git clone https://github.com/Divakar-B12/Library-Management-System-Java.git
 cd Library-Management-System-Java
 
-2. Set Up MySQL Database
+### 2. Set Up MySQL Database
 Open your MySQL terminal or GUI (like MySQL Workbench)
 
 Execute the schema.sql file:
@@ -69,7 +68,7 @@ Edit
 SOURCE path_to_project/schema.sql;
 This will create a library_db with required tables: books, members, and issued_books.
 
-3. Configure Database Connection
+### 3. Configure Database Connection
 Open DBConnection.java and update the credentials:
 
 java
@@ -78,7 +77,7 @@ Edit
 private static final String URL = "jdbc:mysql://localhost:3306/library_db";
 private static final String USER = "your_mysql_username";
 private static final String PASSWORD = "your_mysql_password";
-4. Compile and Run
+### 4. Compile and Run
 Use any IDE (like IntelliJ or Eclipse) or run via terminal:
 
 bash
