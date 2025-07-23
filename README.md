@@ -40,3 +40,50 @@ This project simulates a basic library system with functionalities such as:
 
 ## 📁 Project Structure
 
+LibraryManagementSystem/
+├── Book.java # Book entity class
+├── Member.java # Member entity class
+├── DBConnection.java # MySQL connection logic
+├── LibraryManager.java # Business logic for all operations
+├── Main.java # Entry point with menu interface
+└── schema.sql # SQL script to create necessary tables
+
+---
+
+## 🧑‍💻 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Divakar-B12/Library-Management-System-Java.git
+cd Library-Management-System-Java
+
+2. Set Up MySQL Database
+Open your MySQL terminal or GUI (like MySQL Workbench)
+
+Execute the schema.sql file:
+
+sql
+Copy
+Edit
+SOURCE path_to_project/schema.sql;
+This will create a library_db with required tables: books, members, and issued_books.
+
+3. Configure Database Connection
+Open DBConnection.java and update the credentials:
+
+java
+Copy
+Edit
+private static final String URL = "jdbc:mysql://localhost:3306/library_db";
+private static final String USER = "your_mysql_username";
+private static final String PASSWORD = "your_mysql_password";
+4. Compile and Run
+Use any IDE (like IntelliJ or Eclipse) or run via terminal:
+
+bash
+Copy
+Edit
+javac *.java
+java Main
+
